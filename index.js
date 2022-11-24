@@ -7,7 +7,6 @@ const app = express();
 const hbs = exphbs.create({
     partialsDir: ['./views/partials'],
 });
-const PORT = process.env.PORT
 
 
 app.engine('handlebars', hbs.engine);
@@ -29,6 +28,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(PORT, () => {
+app.listen(3000, () => {
     console.log(`Server listening on port ${PORT}`);
 });
